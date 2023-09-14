@@ -1,13 +1,4 @@
-const lightMode = document.querySelector(".light-mode");
-const darkMode = document.querySelector(".dark-mode");
+const countriesRow = document.querySelector(".countries-row");
 
-lightMode.addEventListener("click", () => {
-  lightMode.classList.add("mode-hide");
-  darkMode.classList.remove("mode-hide");
-  document.body.classList.add("white");
-});
-darkMode.addEventListener("click", () => {
-  darkMode.classList.add("mode-hide");
-  lightMode.classList.remove("mode-hide");
-  document.body.classList.remove("white");
-});
+const ENDPOINT = "https://ap-countries-api.vercel.app/";
+

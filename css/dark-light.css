@@ -1,8 +1,39 @@
 .white header {
-  background-color: #fff;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
 }
 
 .white .nav-left a {
+  color: #111517;
+}
+
+.white main {
+  background: #fafafa;
+}
+
+.white .search-input {
+  border-color: #fff;
+  background: #fff;
+}
+
+.white .region-select {
+  border-color: #fff;
+  background: #fff;
+  color: #111517;
+}
+
+.white .search-input,
+.search-input::placeholder {
+  color: #848484;
+}
+
+.white .country-card {
+  background: #fff;
+}
+
+.white .country-name span,
+.white .about-country h1,
+.white .about-country span {
   color: #111517;
 }
 
