@@ -1,0 +1,37 @@
+.white header {
+  background-color: #fff;
+}
+
+.white .nav-left a {
+  color: #111517;
+}
+
+.dark-mode,
+.light-mode {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.light-mode span {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.dark-mode span {
+  color: #111517;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.mode-hide {
+  display: none;
+}
