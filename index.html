@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/style.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="nav-left"><a href="#">Where in the world?</a></div>
+          <div class="nav-right">
+            <div class="dark-light">
+              <div class="dark-mode mode-hide">
+                <img src="assets/dark.svg" alt="dark-icon" />
+                <span>Dark mode</span>
+              </div>
+              <div class="light-mode">
+                <img src="assets/light.png" alt="light-icon" />
+                <span>Light mode</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="input-row">
+          <div class="search">
+            <img
+              src="assets/search.svg"
+              class="search-icon"
+              alt="search-icon"
+            />
+            <input
+              type="search"
+              name="search-country"
+              class="search-input"
+              placeholder="Search for a country…"
+            />
+          </div>
+          <div class="select-regions">
+            <select name="region-select" class="region-select">
+              <option value="filter" class="filter">Filter by region</option>
+              <optgroup class="region-group">
+                <option class="region" value="euro">Europe</option>
+                <option class="region" value="asia">Asia</option>
+                <option class="region" value="sth-america">
+                  South America
+                </option>
+                <option class="region" value="nth-america">
+                  North America
+                </option>
+                <option class="region" value="africa">Africa</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+        <div class="countries-row">
+          <div class="country-card">
+            <div class="card-body"><img src="assets/Germany.png" alt="" /></div>
+            <div class="card-footer">
+              <div class="country-name"><span>Germany</span></div>
+              <div class="about-country">
+                <h1>Population: <span>81,770,900</span></h1>
+                <h1>Region: <span>Europe</span></h1>
+                <h1>Capital: <span>Berlin</span></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
