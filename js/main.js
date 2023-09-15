@@ -1,6 +1,6 @@
 const countriesRow = document.querySelector(".countries-row");
-const url = "https://ap-countries-api.vercel.app/all?page=1&limit=10";
 
+const url = "https://ap-countries-api.vercel.app/all?page=1&limit=10";
 function countryData(url, callback) {
   const request = new XMLHttpRequest();
   request.open("GET", url, true);
@@ -24,7 +24,7 @@ countryData(url, function (data, error) {
   if (error) {
     console.error("Error:", error);
   } else {
-    data.forEach((country) => {
+    data.data.map((country) => {
       countriesRow.innerHTML += `<div class="country-card">
               <div class="card-body"><img src="${country.flags.png}" alt="${country.name}" /></div>
               <div class="card-footer">
