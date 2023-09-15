@@ -1,6 +1,6 @@
 const countriesRow = document.querySelector(".countries-row");
 document.addEventListener("DOMContentLoaded", function () {
-  const url = "https://ap-countries-api.vercel.app/all?page=1&limit=10";
+  const url = "https://ap-countries-api.vercel.app/all?page=1&limit=25";
 
   function countryData(url, callback) {
     const request = new XMLHttpRequest();
