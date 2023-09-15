@@ -1,0 +1,124 @@
+main {
+  background: #202c36;
+}
+
+.return-page {
+  display: flex;
+  padding-top: 80px;
+  margin-bottom: 80px;
+}
+
+.return-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 40px;
+  border-radius: 6px;
+  background: #2b3844;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.29);
+}
+
+.return-link span {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.country {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.country-flag {
+  width: auto !important;
+}
+
+.country-flag img {
+  object-fit: cover;
+  border-radius: 15px;
+  width: 560px;
+  height: auto;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.about-country {
+  display: flex;
+  flex-direction: column;
+}
+
+.country-name h1 {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.country-exp {
+  margin-top: 25px;
+  display: flex;
+  align-items: start;
+  gap: 117px;
+}
+
+.exp-left h1,
+.exp-right h1 {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.exp-left span,
+.exp-right span {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.borders {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.borders span {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.border-countries {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.border-countries a {
+  padding: 5px 10px;
+  border-radius: 2px;
+  background: #2b3844;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}

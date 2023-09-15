@@ -22,8 +22,10 @@ input {
   outline: none;
 }
 .container {
-  max-width: 1440px;
+  max-width: 1320px;
   margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 /* header */
 
@@ -117,6 +119,17 @@ main {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+}
+
+@media (max-width: 700px) {
+  .input-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .search-input,
+  .region-select {
+    width: 300px;
+  }
 }
 
 .countries-row {
