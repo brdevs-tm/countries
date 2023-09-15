@@ -33,14 +33,23 @@ main {
   justify-content: space-between;
 }
 
+@media (max-width: 1200px) {
+  .country {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
 .country-flag {
-  width: auto !important;
+  width: 560px;
+  max-width: 560px;
 }
 
 .country-flag img {
   object-fit: cover;
   border-radius: 15px;
-  width: 560px;
+  width: 100%;
+  /* max-width: 100%; */
   height: auto;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -121,4 +130,17 @@ main {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+
+@media (max-width: 600px) {
+  .country-flag {
+    width: 300px;
+  }
+  .country-exp {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .border-countries {
+    flex-wrap: wrap;
+  }
 }
