@@ -5,9 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
   function countryData(url, callback) {
     const request = new XMLHttpRequest();
     request.open("GET", url, true);
+
+    if (countriesRow.innerHTML === "") {
+      countriesRow.innerHTML = "Loading...";
+    }
+
     request.send();
 
     request.onreadystatechange = function () {
+      countriesRow.innerHTML = "";
       if (request.readyState === 4) {
         if (request.status === 200) {
           let dataJson = request.response;
@@ -42,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
 
         countryCard.addEventListener("click", () => {
-          window.location.href = `../country.html`;
+          window.location.href = `../country.html#${country.name.common}`;
         });
 
         countriesRow.appendChild(countryCard);
