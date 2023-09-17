@@ -119,7 +119,7 @@ main {
   gap: 10px;
 }
 
-.border-countries a {
+.border-countries span {
   padding: 5px 10px;
   border-radius: 2px;
   background: #2b3844;
@@ -130,6 +130,10 @@ main {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
 }
 
 @media (max-width: 600px) {
