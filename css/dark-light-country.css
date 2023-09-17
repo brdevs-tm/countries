@@ -29,6 +29,9 @@
 .white .about-country span {
   color: #111517;
 }
+.white .border-countries span {
+  background: #fff;
+}
 
 .dark-mode,
 .light-mode {

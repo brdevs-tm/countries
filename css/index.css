@@ -1,34 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap");
 
-* {
-  padding: 0;
-  margin: 0;
-}
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-a {
-  text-decoration: none;
-}
-button {
-  border: none;
-}
-li {
-  list-style: none;
-}
-input {
-  outline: none;
-}
-.container {
-  max-width: 1320px;
-  margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-/* header */
-
 header {
   background: #2b3844;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
