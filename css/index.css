@@ -166,6 +166,25 @@ main {
   }
 }
 
+/*DATA LOADER*/
+
+.data-loader {
+  /* position: relative; */
+}
+.data-loader span {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 26px;
+}
+
 .country-card {
   display: flex;
   flex-direction: column;

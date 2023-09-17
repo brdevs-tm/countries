@@ -1,4 +1,6 @@
 const countriesRow = document.querySelector(".countries-row");
+
+let dataLoaderSpan;
 document.addEventListener("DOMContentLoaded", function () {
   const url = "https://ap-countries-api.vercel.app/all?page=1&limit=25";
 
@@ -7,7 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
     request.open("GET", url, true);
 
     if (countriesRow.innerHTML === "") {
-      countriesRow.innerHTML = "Loading...";
+      const dataLoader = document.createElement("div");
+      dataLoader.classList.add("data-loader");
+      dataLoaderSpan = document.createElement("span");
+      dataLoaderSpan.textContent = "LOADING...";
+      dataLoader.appendChild(dataLoaderSpan);
+      countriesRow.append(dataLoader);
     }
 
     request.send();
