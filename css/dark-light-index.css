@@ -32,12 +32,30 @@
 }
 
 .white .country-card {
+  border-bottom-color: #fff;
+}
+
+.white .country-card:hover {
+  border-bottom-color: #2b3844;
+}
+
+.white .country-card,
+.white .pgn-button {
   background: #fff;
+}
+
+.white .pgn-button {
+  border: 2px solid #fff;
+}
+
+.white .pgn-button:hover {
+  border-color: #2b3844;
 }
 
 .white .country-name span,
 .white .about-country h1,
-.white .about-country span {
+.white .about-country span,
+.white .pgn-button {
   color: #111517;
 }
 

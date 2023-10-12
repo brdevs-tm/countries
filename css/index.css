@@ -163,8 +163,12 @@ main {
   width: 264px;
   max-width: 264px;
   border-radius: 5px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 5px solid #2b3844;
   background: #2b3844;
-  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
+  box-shadow: 0px 0px 70px 2px rgba(0, 0, 0, 0.03);
   overflow: hidden;
   cursor: pointer;
   transition: 0.5s;
@@ -179,12 +183,13 @@ main {
 }
 
 .country-card:hover {
+  border-color: #fff;
   box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.6);
-  transform: translateY(5px);
-  -webkit-transform: translateY(5px);
-  -moz-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  -o-transform: translateY(5px);
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
 }
 
 .card-body {
@@ -193,7 +198,7 @@ main {
 
 .card-body img {
   width: 100%;
-  height: 160px;
+  height: 180px;
   object-fit: cover;
 }
 
@@ -236,4 +241,46 @@ main {
   font-style: normal;
   font-weight: 300;
   line-height: 16px;
+}
+
+.footer-content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-buttons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pgn-button {
+  cursor: pointer;
+  background: #2b3844;
+  padding: 20px;
+  color: #fff;
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+  border: 2px solid #2b3844;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  transition: all 0.5s;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.pgn-button:hover {
+  border-color: white;
 }

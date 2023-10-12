@@ -106,10 +106,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-// class createCountry {
-//   constructor(data) {
-//     this.data = data;
-//   }
-
-//   get create() {}
-// }
