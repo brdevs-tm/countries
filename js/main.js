@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
           const error = new Error("Error " + request.status);
           callback(null, error);
         }
+        console.log(dataxxxx);
       }
     };
   }
